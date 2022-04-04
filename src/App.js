@@ -13,7 +13,7 @@ function App() {
        <Navbar></Navbar>
        <ItemListContainer greeting ="Milano es una tienda especializada en vinos, espumantes, whiskys, bebidas blancas, cervezas y regaleria."></ItemListContainer>
       </header>
-      <ItemCount stock="5" initial="1"></ItemCount>
+      <ItemCount stock={5} initial={1}></ItemCount>
     </div>
   );
 }
