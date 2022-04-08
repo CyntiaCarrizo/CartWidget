@@ -1,4 +1,4 @@
-const product =[
+/*const product =[
     {
         "id":1,
         "nombre":"Imperial",
@@ -44,4 +44,4 @@ const product =[
 
 module.exports = {
     product,
-}
+}*/
