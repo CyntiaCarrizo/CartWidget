@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function ItemCount(props){
+const ItemCount = ({initial = 1, stock = 5, onAdd})=>{
 
+    const [rate, setRate] = useState(0);
 
-
-    const [rate, setRate] = useState(1);
+    useEffect(()=>{
+        setRate(initial);
+    },[])
 
     const increment = () =>{
-        if (rate <5){
+        if (rate < stock){
             setRate(rate+1);
         }
     }
 
     const decremento = () =>{
-        if(rate <=5 && rate >1){
+        if(rate <= stock && rate > initial){
             setRate(rate-1);
         }
     }
@@ -24,7 +26,12 @@ function ItemCount(props){
              <button class="btn btn-primary me-md-2" type="button" onClick={increment}>+</button>
              <p>Cantidad: <span>{rate}</span></p>
              <button class="btn btn-primary" type="button" onClick={decremento}>-</button>
-            <button class="btn btn-primary" type="button">Stock Disponible: {props.stock}</button>
+             {
+                    stock
+                    ? <button class="btn btn-primary" type="button" onClick={()=> onAdd(rate)}>Agregar al Carrito</button>
+                    : <button class="btn btn-primary" type="button" disabled>No hay stock disponible</button>
+             }
+             
          </div>
         </>
 

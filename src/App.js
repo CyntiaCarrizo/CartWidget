@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
 import ItemListContainer from './Components/ItemListContainer';
-
+import './CssPersonal/CssPersonalizado.css'
 
 
 

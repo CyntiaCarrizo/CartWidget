@@ -18,7 +18,7 @@ const product = [
         precio:"$",
         stock:100,
         descripcion:"Cerveza Imperial APA: APA es una Pale Ale de origen americano hecha con 100% de lúpulo Cascade y maltas especiales como Munich Caramelo y algo de Tostada que le da cuerpo a la cerveza y un equilibrio perfecto.",
-        imagen:"../../Productos/imperial.jpg",
+        imagen:".../imperial.jpg",
     },
       {
         id:3,
@@ -26,7 +26,7 @@ const product = [
         precio:"$",
         stock:100,
         descripcion:"Edición limitada. una cerveza con sabor equilibrado, ligera y fácil de tomar.Una lager ideal para esos momentos en los que querés disfrutar de un sabor más suave sin resignar calidad y sabor",
-        imagen:"https://ardiaprod.vteximg.com.br/arquivos/ids/215211-1000-1000/Cerveza-Imperial-Golden-lata-473-Ml-_1.jpg?v=637713698773570000",
+        imagen:["https://ardiaprod.vteximg.com.br/arquivos/ids/215211-1000-1000/Cerveza-Imperial-Golden-lata-473-Ml-_1.jpg?v=637713698773570000"]
     },
     {
         id:4,
@@ -59,7 +59,7 @@ function ItemList(){
                                         price={item.precio}
                                         stock={item.stock}
                                         descripcion={item.descripcion}
-                                        image={item.imagen}/> )
+                                        image={item.imagen[0]}/> )
             : <p>Cargando</p>
 
             }

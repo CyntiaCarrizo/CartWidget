@@ -9,7 +9,11 @@ const {product} = require ("./ItemList")
 
 function ItemListContainer(greeting){
     
-     const[datos, setDatos] = useState([])
+    const onAdd=(cantidad)=>{
+        alert(`La cantidad de productos seleccionado es: ${cantidad}`)
+    }
+    
+    const[datos, setDatos] = useState([])
     
     
     useEffect(()=>{
@@ -26,10 +30,11 @@ function ItemListContainer(greeting){
         {greeting.greeting}
         </p>
         <ItemList product={datos}></ItemList>
-        <ItemCount stock={5} initial={1}></ItemCount>
+        <ItemCount stock={5} initial={1} onAdd={onAdd}></ItemCount>
       
         </>
     )
 }
 
 export default ItemListContainer
+

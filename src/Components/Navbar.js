@@ -8,7 +8,7 @@ function Navbar(){
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
       <img src="./logoo.jpg" width="75" height="75"></img>
-    <a className="navbar-brand" href="#">Milano Beers & Cheers</a>
+    <h1 className="titulo"><a className="navbar-brand" href="#">Milano Beers & Cheers</a></h1>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
