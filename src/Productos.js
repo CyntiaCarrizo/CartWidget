@@ -1,11 +1,11 @@
-/*const product =[
+const product =[
     {
         "id":1,
         "nombre":"Imperial",
         "precio":"$",
         "stock":100,
         "descripcion":"Imperial Edicion Especial Amber Larger",
-        "imagen":"./Productos/imperial.jpg"
+        "imagen":"https://club23.com.ar/wp-content/uploads/2021/08/ImperialRoja.jpg"
     },
     {
         "id":2,
@@ -21,7 +21,7 @@
         "precio":"$",
         "stock":100,
         "descripcion":"Edición limitada. una cerveza con sabor equilibrado, ligera y fácil de tomar.Una lager ideal para esos momentos en los que querés disfrutar de un sabor más suave sin resignar calidad y sabor",
-        "imagen":"./Productos/imperialgolden.jpg"
+        "imagen":"https://ardiaprod.vteximg.com.br/arquivos/ids/215211-1000-1000/Cerveza-Imperial-Golden-lata-473-Ml-_1.jpg?v=637713698773570000"
     },
     {
         "id":4,
@@ -42,6 +42,18 @@
     
 ]
 
-module.exports = {
-    product,
-}*/
+let is_ok = true;
+
+
+export const promesa = () => {
+    return new Promise((resolve, reject) => {
+        if (is_ok) {
+            setTimeout(() => {
+                resolve(product)
+            }, 2000);
+        } else {
+            reject("Error")
+        }
+    });
+}
+
