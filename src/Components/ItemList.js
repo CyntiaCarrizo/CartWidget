@@ -14,10 +14,10 @@ function ItemList({product}){
             product.length > 0
             ? product.map(item => <Item key={item.id} 
                                         nombre={item.nombre}
-                                        price={item.precio}
+                                        precio={item.precio}
                                         stock={item.stock}
                                         descripcion={item.descripcion}
-                                        image={item.imagen[0]}/> )
+                                        imagen={item.imagen}></Item> )
             : <p>Cargando</p>
 
             }
