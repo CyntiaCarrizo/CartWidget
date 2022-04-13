@@ -2,8 +2,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
-import ItemListContainer from './Components/ItemListContainer';
+
 import './CssPersonal/CssPersonalizado.css'
+import ItemDetailContainer from './Components/ItemDetailContainer';
 
 
 
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
        <Navbar></Navbar>
-       <ItemListContainer greeting ="Milano es una tienda especializada en vinos, espumantes, whiskys, bebidas blancas, cervezas y regaleria."></ItemListContainer>
+      <ItemDetailContainer></ItemDetailContainer>
       </header>
      
      

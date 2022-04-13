@@ -1,11 +1,6 @@
 
 import Item from "./Item"
 
-
-
-
-
-
 function ItemList({product}){
     console.log(product, "soy el item list")
     return(
