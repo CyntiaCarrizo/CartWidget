@@ -18,7 +18,7 @@ function ItemDetailContainer(){
     
     useEffect(()=>{
       customFetch()
-      .then(product=> setDatos (product))
+      .then(results=> setDatos (results[4]))
       .catch(err=> console.log (err))
     },[]);
     
