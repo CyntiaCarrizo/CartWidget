@@ -3,7 +3,7 @@ const product =[
         "id":1,
         "nombre":"Imperial",
         "precio":250,
-        "stock":100,
+        "stock":5,
         "descripcion":"Imperial Edicion Especial Amber Larger",
         "imagen":"https://club23.com.ar/wp-content/uploads/2021/08/ImperialRoja.jpg"
     },
@@ -11,7 +11,7 @@ const product =[
         "id":2,
         "nombre":"Imperial Apa",
         "precio":270,
-        "stock":100,
+        "stock":5,
         "descripcion":"Cerveza Imperial APA: APA es una Pale Ale de origen americano hecha con 100% de lúpulo Cascade y maltas especiales como Munich Caramelo y algo de Tostada que le da cuerpo a la cerveza y un equilibrio perfecto.",
         "imagen":"https://distriuruguayexpress.com.ar/wp-content/uploads/2021/11/apa.jpg"
     },
@@ -19,7 +19,7 @@ const product =[
         "id":3,
         "nombre":"Imperial Golden",
         "precio":245,
-        "stock":100,
+        "stock":5,
         "descripcion":"Edición limitada. una cerveza con sabor equilibrado, ligera y fácil de tomar.Una lager ideal para esos momentos en los que querés disfrutar de un sabor más suave sin resignar calidad y sabor",
         "imagen":"https://ardiaprod.vteximg.com.br/arquivos/ids/215211-1000-1000/Cerveza-Imperial-Golden-lata-473-Ml-_1.jpg?v=637713698773570000"
     },

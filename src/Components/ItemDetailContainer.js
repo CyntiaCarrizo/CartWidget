@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import ItemDetails from "./ItemsDetails"
 import { customFetch } from "../Productos.js"
+
 const { product}= require ('../Productos.js')
 
 
@@ -17,12 +18,12 @@ function ItemDetailContainer(){
     
     useEffect(()=>{
       customFetch()
-      .then(product=> setDatos(product))
+      .then(product=> setDatos (product))
       .catch(err=> console.log (err))
-    },[])
+    },[]);
     
     console.log (datos, "soy la data")
-
+    
 
     return(
         <>
@@ -30,9 +31,11 @@ function ItemDetailContainer(){
       
         <ItemDetails product={datos}></ItemDetails>
        
+       
       
         </>
     )
+    
 }
 
 export default ItemDetailContainer
