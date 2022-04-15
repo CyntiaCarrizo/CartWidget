@@ -1,13 +1,13 @@
 
 import Item from "./Item"
+import {product} from '../Productos'
 
 
 
 
 
-
-function ItemList({product}){
-    console.log(product, "soy el item list")
+function ItemList(){
+    
     return(
         <>
         {

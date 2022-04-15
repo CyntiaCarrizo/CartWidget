@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import ItemListContainer from './Components/ItemListContainer';
 import './CssPersonal/CssPersonalizado.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ItemDetailsContainer from './Components/ItemDetailsContainer';
 
 
 
@@ -17,6 +18,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<ItemListContainer greeting ="Milano es una tienda especializada en vinos, espumantes, whiskys, bebidas blancas, cervezas y regaleria."></ItemListContainer>}></Route>
                 <Route path='/category/:idCategory' element={<ItemListContainer></ItemListContainer>}></Route>
+                <Route path='/category/itemDetails' element={<ItemDetailsContainer></ItemDetailsContainer>}></Route>
              </Routes>
       </BrowserRouter>
       
