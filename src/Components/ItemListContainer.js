@@ -1,31 +1,46 @@
-import ItemCount from "./ItemCount"
+
 import ItemList from "./ItemList"
 
 import { useEffect, useState } from "react"
 import { promesa } from "../Productos"
-
+import { useParams } from "react-router-dom";
+import {product} from '../Productos'
 
 
 
 
 function ItemListContainer(greeting){
     
-    const onAdd=(cantidad)=>{
-        alert(`La cantidad de productos seleccionado es: ${cantidad}`)
-    }
+    
     
     const [datos, setDatos] = useState([]);
+    const {idCategory} = useParams();
     
     
     useEffect(()=>{
-      async function pedirDatos(){
+        
+        if (idCategory === undefined) {
+         async function pedirDatos(){
            let datosLlegando = await promesa();
            setDatos(datosLlegando)
-       }
+        console.log(idCategory)   
+    }
        pedirDatos()
+      
+        }else{
+            async function pedirDatos(){
+                let filtrar= product.filter(item => item.categoryId === parseInt(idCategory))
+                let datosLlegando = await promesa(filtrar[1]);
+                setDatos(datosLlegando)
+                 console.log(filtrar, datosLlegando)   
+            }
+            pedirDatos()
+           
+        }
+      
     },[])
     
-    console.log (datos, "soy la data")
+console.log(idCategory)
 
 
     return(
@@ -34,7 +49,7 @@ function ItemListContainer(greeting){
         {greeting.greeting}
         </p>
         <ItemList product={datos}></ItemList>
-        <ItemCount stock={5} initial={1} onAdd={onAdd}></ItemCount>
+       
       
         </>
     )
