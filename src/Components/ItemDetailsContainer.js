@@ -10,24 +10,25 @@ import ItemDetails from "./ItemDetails"
 const ItemDetailsContainer =()=>{
 
     const[detail, setDetail] = useState([])
-    const {itemDetails} = useParams()
+    const {idItem} = useParams()
 
 
     useEffect(()=>{
-        if (itemDetails === undefined) {
+        if (idItem === undefined) {
               customFetch(2000, product)
         .then(result =>setDetail(result))
+
         .catch(err => console.log(err))
         
         }else{
-            customFetch(2000, product.filter(item => item.id=== parseInt(itemDetails)))
-            .then(result =>setDetail(result[1]))
+            customFetch(2000, product.filter(item => item.id=== parseInt(idItem)))
+          .then(result =>setDetail(result))
             .catch(err => console.log(err))
-            console.log(customFetch())
-            console.log( setDetail())
+            console.log("detail", detail)
+           
         }
       
-    },[itemDetails])
+    },[idItem])
 
 
     return(

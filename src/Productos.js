@@ -6,10 +6,10 @@
 export const product =[
     {
         id:1,
-        nombre:"Imperial",
+        nombre:"Imperial Edicion Especial Amber Larger",
         precio:250,
         stock:100,
-        descripcion:"Imperial Edicion Especial Amber Larger",
+        descripcion:"Su blend de maltas le otorgan un delicado color ámbar rojizo, una persistente espuma, un fino aroma a granos y un exquisito sabor balanceado entre el dulzor y el amargo. Blend de Maltas: Malta Pilsen, malta Caramelo, malta Chocolate. Ideal para acompañar embutidos, fiambres y carnes asadas.",
         categoryId:1,
         imagen:"https://club23.com.ar/wp-content/uploads/2021/08/ImperialRoja.jpg"
     },
@@ -27,7 +27,7 @@ export const product =[
         nombre:"Imperial Golden",
         precio:245,
         stock:100,
-        descripcion:"Edición limitada. una cerveza con sabor equilibrado, ligera y fácil de tomar.Una lager ideal para esos momentos en los que querés disfrutar de un sabor más suave sin resignar calidad y sabor",
+        descripcion:"Edición limitada. Imperial Golden es una cerveza rubia edición limitada, de contextura suave y con sabor muy refrescante. Contiene un IBU de 8, y su contenido alcohólico (ABV), es de 4,7%. una cerveza con sabor equilibrado, ligera y fácil de tomar.Una lager ideal para esos momentos en los que querés disfrutar de un sabor más suave sin resignar calidad y sabor",
         categoryId:1,
         imagen:"https://ardiaprod.vteximg.com.br/arquivos/ids/215211-1000-1000/Cerveza-Imperial-Golden-lata-473-Ml-_1.jpg?v=637713698773570000"
     },
@@ -54,7 +54,7 @@ export const product =[
         nombre:"Cosecha Tardia Rosada",
         precio:185,
         stock:100,
-        descripcion:"",
+        descripcion:"Con este rosado dulce, Norton completa la saga de sus Cosecha Tardía. Elaborado con uvas Merlot logra un color rosa leve de tonos rojizos, aromatica frutal profunda y un sabor franco de frutos rojos",
         categoryId:2,
         imagen:"https://rinconelegido.com.ar/wp-content/uploads/2017/08/Art455_NortonCosechaTardiaRosado_750cc.jpg"
     },
@@ -63,7 +63,7 @@ export const product =[
         nombre:"Cosecha Tardia Blanco Norton",
         precio:185,
         stock:100,
-        descripcion:"",
+        descripcion:"Es elaborado a partir de una selección especial de uvas blancas cosechadas sobremaduras, para lograr su característica dulzura. Su sabor suave, junto a las notas a miel que se perciben en el aroma, lo hacen un vino ideal para beberlo solo, o bien para acompañar postres, patés, quesos azules y frutas secas. Desde su lanzamiento en 1985, Norton Cosecha Tardía es un clásico de la góndola.",
         categoryId:2,
         imagen:"https://www.espaciovino.com.ar/media/default/0001/60/thumb_59587_default_medium.jpeg"
     },
@@ -72,7 +72,7 @@ export const product =[
         nombre:"Red Bull",
         precio:185,
         stock:100,
-        descripcion:"",
+        descripcion:"Es una bebida energizante, creada para estimular el cerebro en personas sometidas a un gran esfuerzo físico y nunca para ser consumido como una bebida inocente o refrescante. Contiene, principalmente agua, azúcar (sacarosa, glucosa), cafeína, taurina, así como diferentes vitaminas (niacina, ácido pantoténico, B6 y B12).",
         categoryId:5,
         imagen:"https://cdnx.jumpseller.com/dc-central-distribuidora-de-licores/image/16063932/resize/540/540?1646775862"
     },

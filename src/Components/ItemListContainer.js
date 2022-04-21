@@ -13,7 +13,7 @@ const ItemListContainer=()=>{
     
     
     
-    const [datos, setDatos] = useState([]);
+    const [datos, setDatos] = useState({});
     const {idCategory} = useParams();
     
     
@@ -34,11 +34,11 @@ const ItemListContainer=()=>{
                 let datosLlegando = await promesa();
                 let filtrar = datosLlegando.filter(item => item.categoryId === parseInt(idCategory))
                
-                setDatos(product)
+                setDatos(filtrar)
                  console.log(filtrar, datosLlegando, promesa())   
         
           }
-             pedirDatos() 
+             pedirDatos()
            
         }
       

@@ -18,7 +18,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<ItemListContainer greeting ="Milano es una tienda especializada en vinos, espumantes, whiskys, bebidas blancas, cervezas y regaleria."></ItemListContainer>}></Route>
                 <Route path='/category/:idCategory' element={<ItemListContainer></ItemListContainer>}></Route>
-                <Route path='/category/itemDetails' element={<ItemDetailsContainer></ItemDetailsContainer>}></Route>
+                <Route path='/item/:idItem' element={<ItemDetailsContainer></ItemDetailsContainer>}></Route>
              </Routes>
       </BrowserRouter>
       
