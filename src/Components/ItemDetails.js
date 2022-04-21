@@ -1,8 +1,11 @@
-
+import ItemCount from "./ItemCount"
 
 
 const ItemDetails =({product})=>{
 
+    const onAdd=(cantidad)=>{
+        alert(`La cantidad de productos seleccionado es: ${cantidad}`)
+    }
    console.log("ItemDetails", product)
                     
     return(
@@ -17,14 +20,20 @@ const ItemDetails =({product})=>{
                     <div className="col-md-8">
                     <div className="card-body">
                         <h5 className="card-title">{product[0].nombre}</h5>
-                        <p className="card-text">{product[0].descripcion}</p>
-                        <p className="card-text">{product[0].precio}</p>
+                        <p className="card-text">Descripcion: {product[0].descripcion}</p>
+                        <p className="card-text">Precio: $ {product[0].precio}</p>
                         <p className="card-text"><small className="text-muted">Stock disponible: {product[0].stock}</small></p>
-                    </div>
+                    </div> 
+                    {
+                        <ItemCount  onAdd={onAdd}></ItemCount>
+                      }
                     </div>
                 </div>
-                </div>): <p>Cargando</p>
-            }                 
+                </div> ): <p>Cargando</p>} 
+               
+                   
+               
+                            
                 </>
     )
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const ItemCount = ({initial = 1, stock = 5, onAdd})=>{
+const ItemCount = ({initial = 1, stock = 5, })=>{
     
     const onAdd=(cantidad)=>{
         alert(`La cantidad de productos seleccionado es: ${cantidad}`)
